@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>PLUH</title>
+  
+</head>
+<body>
+<style>
+    body {
+  background-image: url("https://i.kym-cdn.com/entries/icons/original/000/053/047/Ain't_that_fantastic_fn_meme.jpg"); 
+  background-size: cover;  
+  background-repeat: no-repeat; 
+  margin: 0; 
+}
+</style>
+ 
+
+  <audio id="bgAudio" src="Fantastic Four Edit  Song_ 90210 - Travis Scott.mp3" loop></audio>
+
+  <script>
+    const audio = document.getElementById('bgAudio');
+
+    function tryPlay(){
+      audio.play().catch(()=>{
+        document.body.addEventListener('click', ()=>{
+          audio.play();
+        }, {once:true});
+      });
+    }
+
+    audio.addEventListener('pause', () => {
+      setTimeout(()=>{ audio.play(); }, 200);
+    });
+
+    document.addEventListener('DOMContentLoaded', tryPlay);
+  </script>
+
+</body>
+</html>
