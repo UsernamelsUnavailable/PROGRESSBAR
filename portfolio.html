@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 30px;
+        }
+        h1 {
+            color: darkblue;
+        }
+        .progress {
+            width: 300px;
+            background-color: #f3f3f3;
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+        .progress-bar {
+            height: 10px;
+            border-radius: 10px;
+        }
+        .html-progress { width: 80%; background-color: #4CAF50; }
+        .css-progress { width: 60%; background-color: #2196F3; }
+        .js-progress { width: 40%; background-color: orange; }
+
+        input, select, textarea {
+            margin: 5px;
+        }
+
+        .contact-form {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .contact-form input[type="text"], 
+        .contact-form input[type="email"], 
+        .contact-form input[type="url"],
+        .contact-form textarea {
+            width: 200px;
+            padding: 5px;
+        }
+
+        .contact-form label {
+            font-weight: bold;
+        }
+
+        .circle-image {
+            width: 80px;
+            height: 80px;
+            background-color: green;
+            border-radius: 50%;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>My Portfolio</h1>
+    <p>Welcome to my HTML5 practice project!</p>
+
+    <div class="circle-image"></div>
+
+    <h2>My Skills Progress</h2>
+    <p>HTML5 Learning Progress:</p>
+    <div class="progress">
+        <div class="progress-bar html-progress"></div>
+    </div>
+
+    <p>CSS Learning Progress:</p>
+    <div class="progress">
+        <div class="progress-bar css-progress"></div>
+    </div>
+
+    <p>JavaScript Learning Progress:</p>
+    <div class="progress">
+        <div class="progress-bar js-progress"></div>
+    </div>
+
+    <h2>Search Example</h2>
+    <label for="tools">Favorite Web Tool:</label>
+    <input list="webtools" id="tools" name="tools">
+    <datalist id="webtools">
+        <option value="VS Code">
+        <option value="Chrome DevTools">
+        <option value="GitHub">
+        <option value="CodePen">
+        <option value="Stack Overflow">
+    </datalist>
+
+    <h2>Contact Me</h2>
+    <form class="contact-form">
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" placeholder="Enter your name">
+
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" placeholder="Enter your email">
+
+        <label for="website">Portfolio Website:</label>
+        <input type="url" id="website" placeholder="Enter your website">
+
+        <label for="phone">Phone Number:</label>
+        <input type="text" id="phone" placeholder="Enter your number">
+
+        <label for="message">Message:</label>
+        <textarea id="message" placeholder="Write something..."></textarea>
+
+        <button type="submit">Send</button>
+    </form>
+
+</body>
+</html>
